@@ -7,25 +7,38 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Fira Code';
+    font-display: fallback;
+    src: url('/font/FiraCode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-display: fallback;
+    src: url('/font/FiraCode-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Fira Code';
+  }
+
+`
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <GlobalStyle />
+      <Header siteTitle="Title" />
       <div
         style={{
           margin: `0 auto`,
