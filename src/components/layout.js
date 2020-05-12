@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Fira Code';
+    margin: 0;
   }
 
 `
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle="Title" />
+      <Header siteTitle="@font-face in Gatsby" />
       <div
         style={{
           margin: `0 auto`,
@@ -47,7 +48,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer css="padding-top: 2em;">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
