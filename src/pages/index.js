@@ -7,11 +7,15 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Don't use @font-face in styled-components" />
     <h1>Don't use @font-face in styled-components</h1>
     <p>
       This is an example how you <b>shouldn't</b> add a @font-face in a gatsby
-      project.
+      project. See{" "}
+      <a href="https://github.com/philschonholzer/font-face-styled-components">
+        source
+      </a>{" "}
+      on github.
     </p>
     <p>
       See how the page flickers if you click on a internal{" "}
