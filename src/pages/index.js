@@ -26,7 +26,7 @@ const IndexPage = () => (
       <a href="https://font-face-import.netlify.app">example</a>.
     </p>
     <div css="display: flex; flex-wrap: wrap; margin: 1em -1em">
-      <div css="flex: 0 1 300px; margin: 1em">
+      <div css="flex: 0 1 300px; margin: 1em;">
         <Image />
       </div>
       <div css="flex: 1 1 0%; margin: 1em">
