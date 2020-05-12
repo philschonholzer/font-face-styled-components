@@ -32,11 +32,11 @@ const IndexPage = () => (
       <div css="flex: 1 1 0%; margin: 1em">
         <h2>The problem</h2>
         <p>
-          If you click the linke below you will see, that the page will flicker.
-          This shouldn't happen in a gatsby page. This is because the font-face
-          is reloaded with each navigation. You can see in the dev-tools of your
-          browser how the 'FireCode'-fonts are requested each time you click the
-          link below.
+          If you click the internal <a href="/page-2/">link to page 2</a> you
+          will see, that the page will flicker. This shouldn't happen in a
+          gatsby page. This is because the font-face is reloaded with each
+          navigation. You can see in the dev-tools of your browser how the
+          'FireCode'-fonts are requested each time you click the internal link.
         </p>
         <h2>Why is this happening?</h2>
         <p>
