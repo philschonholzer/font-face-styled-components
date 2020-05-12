@@ -28,7 +28,7 @@ const Image = () => {
 
   return (
     <Img
-      css="transform: translate(-3em) rotate(50deg)"
+      css="transform: translate(-3em, 0.5em) rotate(50deg); z-index: -1;"
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
   )
